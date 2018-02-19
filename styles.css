@@ -103,7 +103,7 @@
   }
   
   /* Hide default HTML checkbox */
-  .switch input {display:none;}
+  .switch__input--hide {display:none;}
   
   /* The slider */
   .slider {

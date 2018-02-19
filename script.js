@@ -55,14 +55,14 @@ progress.outerHTML = `
         </div>
         <div class="row">
             <label class="row__switch">
-                <input type="checkbox" id="anim" onchange="animated(this.checked)">
+                <input type="checkbox" id="anim" class="switch__input--hide" onchange="animated(this.checked)">
                 <span class="slider round"></span>
             </label>
             <span>Animate</span>
         </div>
         <div class="row">
             <label class="row__switch">
-                <input type="checkbox" id="hid" onchange="hide(this.checked)">
+                <input type="checkbox" id="hid" class="switch__input--hide" onchange="hide(this.checked)">
                 <span class="slider round"></span>
             </label>
             <span>Hide</span>
