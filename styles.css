@@ -9,6 +9,8 @@
 }
 
 #circle {
+    border-radius: 50%;
+    overflow: hidden;
     flex: 1;
     position: relative;
     display: flex;
@@ -16,10 +18,10 @@
 }
 
 #val {
-    width: 60px;
-    border-radius: 30px;
-    height: 34px;
-    font-size: 20px;
+    width: 100px;
+    border-radius: 50px;
+    height: 50px;
+    font-size: 44px;
     outline: none;
     text-align: center;
     border-color: black;
@@ -30,10 +32,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 20px;
+    font-size: 44px;
     padding-top: 10px;
-    height: 44px;
-    width: 50%;
+    height: 100px;
+    width: 80%;
 }
 
 .left-block {
@@ -51,7 +53,7 @@
     transform-origin: right center;
     background: gray;
     transition: 1s linear;
-	border-top-left-radius: 1000px;
+    border-top-left-radius: 1000px;
     border-bottom-left-radius: 1000px;
 }
 
@@ -70,7 +72,7 @@
     transform-origin: left center;
     background: gray;
     transition: 1s linear;
-	border-top-right-radius: 1000px;
+    border-top-right-radius: 1000px;
     border-bottom-right-radius: 1000px;
 }
 
@@ -95,8 +97,8 @@
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 100px;
+    height: 50px;
   }
   
   /* Hide default HTML checkbox */
@@ -118,8 +120,8 @@
   .slider:before {
     position: absolute;
     content: "";
-    height: 30px;
-    width: 30px;
+    height: 46px;
+    width: 46px;
     left: 2px;
     bottom: 2px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -133,9 +135,9 @@
 
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
     background-color: white;
   }
   
