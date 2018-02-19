@@ -40,28 +40,28 @@ var prevValue = 0;
 // Создаем элементы в DOM
 progress.outerHTML = `
 <div id="progress">
-    <div id="circle">
+    <div id="circle" class="progress__circle">
         <div class="left-block">
-            <div class="left--element" id="left"></div>
+            <div class="left-block__element" id="left"></div>
         </div>
         <div class="right-block">
-            <div class="right--element" id="right"></div>
+            <div class="right-block__element" id="right"></div>
         </div>
-        <div class="center"></div>
+        <div class="progress__center"></div>
     </div>
-    <div class="control">
+    <div class="progress__control">
         <div class="row">
-            <input id="val" onchange="setValue(+this.value)" value="0"><span>Value</span>
+            <input id="val" class="row__val" onchange="setValue(+this.value)" value="0"><span>Value</span>
         </div>
         <div class="row">
-            <label class="switch">
+            <label class="row__switch">
                 <input type="checkbox" id="anim" onchange="animated(this.checked)">
                 <span class="slider round"></span>
             </label>
             <span>Animate</span>
         </div>
         <div class="row">
-            <label class="switch">
+            <label class="row__switch">
                 <input type="checkbox" id="hid" onchange="hide(this.checked)">
                 <span class="slider round"></span>
             </label>
@@ -114,8 +114,8 @@ function hide(val) {
 
 function animated(val) {
     if (val) {
-        this.circle.classList.add('rotating');
+        this.circle.classList.add('progress__circle--rotating');
     } else {
-        this.circle.classList.remove('rotating');
+        this.circle.classList.remove('progress__circle--rotating');
     }
 }
