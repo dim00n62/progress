@@ -47,7 +47,7 @@ progress.outerHTML = `
         <div class="right-block">
             <div class="right-block__element" id="right"></div>
         </div>
-        <div class="progress__center"></div>
+        <div class="center"></div>
     </div>
     <div class="progress__control">
         <div class="row">
