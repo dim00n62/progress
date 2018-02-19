@@ -151,7 +151,7 @@
     border-radius: 50%;
   }
 
-  @-webkit-keyframes rotating /* Safari and Chrome */ {
+  @-webkit-keyframes progress__circle--rotating /* Safari and Chrome */ {
     from {
       -webkit-transform: rotate(0deg);
       -o-transform: rotate(0deg);
@@ -163,7 +163,7 @@
       transform: rotate(360deg);
     }
   }
-  @keyframes rotating {
+  @keyframes progress__circle--rotating {
     from {
       -ms-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
@@ -180,11 +180,11 @@
     }
   }
   .progress__circle--rotating {
-    -webkit-animation: rotating 2s linear infinite;
-    -moz-animation: rotating 2s linear infinite;
-    -ms-animation: rotating 2s linear infinite;
-    -o-animation: rotating 2s linear infinite;
-    animation: rotating 2s linear infinite;
+    -webkit-animation: progress__circle--rotating 2s linear infinite;
+    -moz-animation: progress__circle--rotating 2s linear infinite;
+    -ms-animation: progress__circle--rotating 2s linear infinite;
+    -o-animation: progress__circle--rotating 2s linear infinite;
+    animation: progress__circle--rotating 2s linear infinite;
   }
 
   @media screen and (orientation: landscape) {
