@@ -71,7 +71,7 @@ progress.outerHTML = `
 </div>`;
 
 function setValue(value) {
-    if (value <= 50) {
+    if (value <= 50 && value >= 0) {
         if (this.prevValue > 50) {
             // Рассчитываем пропорциональные задержки исходя из пропорциональности значений, коэффициент больше там, где больша задержка, получается анимация без рывков
             this.right.style.transition = (50 - value)/(this.prevValue - value) + 's ease-out';
@@ -87,7 +87,7 @@ function setValue(value) {
         return ;
     }
 
-    if (value > 50) {
+    if (value > 50 && value <= 100) {
         if (this.prevValue <= 50) {
             // Рассчитываем пропорциональные задержки исходя из пропорциональности значений, коэффициент больше там, где больша задержка, получается анимация без рывков
             this.right.style.transition = (50 - this.prevValue)/(value - this.prevValue) + 's ease-in';
