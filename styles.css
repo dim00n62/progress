@@ -1,0 +1,203 @@
+
+#progress {
+    position: relative;
+    display: inline-block;
+    width: var(--width);
+    height: var(--height);
+    display: flex;
+    left: 10%;
+}
+
+#circle {
+    flex: 1;
+    position: relative;
+    display: flex;
+    transition: .3s;
+}
+
+#val {
+    width: 60px;
+    border-radius: 30px;
+    height: 34px;
+    font-size: 20px;
+    outline: none;
+    text-align: center;
+    border-color: black;
+    border-width: 1px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding-top: 10px;
+    height: 44px;
+    width: 50%;
+}
+
+.left-block {
+	width: 50%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    background: yellow;
+    border-top-left-radius: 1000px;
+    border-bottom-left-radius: 1000px;
+}
+
+.left--element {
+    height: 100%;
+    transform-origin: right center;
+    background: gray;
+    transition: 1s linear;
+}
+
+.right-block {
+	width: 50%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    background: yellow;
+	border-top-right-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+}
+
+.right--element {
+    height: 100%;
+    transform-origin: left center;
+    background: gray;
+    transition: 1s linear;
+}
+
+.center {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.control {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {display:none;}
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: gray;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 2px;
+    bottom: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(44, 196, 56);
+  }
+
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: white;
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  @-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .rotating {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+  }
+
+  @media screen and (orientation: landscape) {
+    :root {
+        --width: 80vw;
+        --height: calc(var(--width)/2);
+    }
+
+    #progress {
+        flex-direction: row;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    :root {
+        --width: 80vw;
+        --height: calc(var(--width)*2);
+    }
+
+    #progress {
+        flex-direction: column;
+    }
+  }
