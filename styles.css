@@ -151,7 +151,7 @@
     border-radius: 50%;
   }
 
-  @-webkit-keyframes progress__circle--rotating /* Safari and Chrome */ {
+  @-webkit-keyframes rotating /* Safari and Chrome */ {
     from {
       -webkit-transform: rotate(0deg);
       -o-transform: rotate(0deg);
@@ -163,7 +163,7 @@
       transform: rotate(360deg);
     }
   }
-  @keyframes progress__circle--rotating {
+  @keyframes rotating {
     from {
       -ms-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
