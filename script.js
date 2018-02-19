@@ -51,7 +51,7 @@ progress.outerHTML = `
     </div>
     <div class="progress__control">
         <div class="row">
-            <input id="val" class="row__val" onchange="setValue(+this.value)" value="0"><span>Value</span>
+            <input id="val" class="row__val" onchange="progress.setValue(+this.value)" value="0"><span>Value</span>
         </div>
         <div class="row">
             <label class="row__switch">
