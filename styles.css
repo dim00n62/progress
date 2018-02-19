@@ -9,8 +9,6 @@
 }
 
 #circle {
-    border-radius: 50%;
-    overflow: hidden;
     flex: 1;
     position: relative;
     display: flex;
@@ -53,6 +51,8 @@
     transform-origin: right center;
     background: gray;
     transition: 1s linear;
+	border-top-left-radius: 1000px;
+    border-bottom-left-radius: 1000px;
 }
 
 .right-block {
@@ -70,6 +70,8 @@
     transform-origin: left center;
     background: gray;
     transition: 1s linear;
+	border-top-right-radius: 1000px;
+    border-bottom-right-radius: 1000px;
 }
 
 .center {
