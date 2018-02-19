@@ -9,6 +9,8 @@
 }
 
 #circle {
+    border-radius: 50%;
+    overflow: hidden;
     flex: 1;
     position: relative;
     display: flex;
