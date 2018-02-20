@@ -1,7 +1,6 @@
 
 #progress {
     position: relative;
-    display: inline-block;
     width: var(--width);
     height: var(--height);
     display: flex;
