@@ -6,6 +6,7 @@
     height: var(--height);
     display: flex;
     left: 10%;
+    overflow: hidden;
 }
 
 .progress__circle {
