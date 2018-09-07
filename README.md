@@ -1,6 +1,8 @@
 # progress
 Progress component for yandex
 
+Demo here: https://dim00n62.github.io/progress/
+
 
 ## API
 value ranged from 0 to 100
